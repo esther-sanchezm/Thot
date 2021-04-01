@@ -1,5 +1,5 @@
 # Character rol application
-Spring Boot application multi-modular.  
+Application is to manage the characters of a role-playing game. 
 
 ## Architecture
 
@@ -17,7 +17,7 @@ Convenctional three layer:
 ### Database design
 //TODO
 
-### Postgresql
+### H2
 //TODO
 
 
