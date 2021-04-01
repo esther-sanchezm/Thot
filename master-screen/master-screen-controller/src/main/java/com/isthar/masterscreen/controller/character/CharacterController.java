@@ -9,9 +9,9 @@ import java.util.List;
 public interface CharacterController {
 
     @GetMapping("/character")
-    List<CharacterResource> getAllCharacter();
+    List<CharacterResource> findAll();
 
     @GetMapping("/character/{name}")
-    CharacterProfileResource getCharacter();
+    CharacterProfileResource get();
 
 }

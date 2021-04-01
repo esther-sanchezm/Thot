@@ -1,6 +1,8 @@
 package com.isthar.masterscreen.repository.character.entity;
 
 
+import com.isthar.masterscreen.repository.race.entity.RaceEntity;
+
 import javax.persistence.*;
 
 @Entity
@@ -20,5 +22,13 @@ public class CharacterEntity {
 
     @Column(name = DESCRIPTION)
     private String description;
+
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private RaceEntity race;
+
+    @ManyToOne
+    @JoinColumn(name = "id")
+    private CharacterEntity character;
     
 }

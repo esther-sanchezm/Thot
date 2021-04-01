@@ -1,11 +1,15 @@
 package com.isthar.masterscreen.repository.magic.entity;
 
+import lombok.Data;
+import net.bytebuddy.asm.Advice;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Data
 @Table(name = "Magic")
 public class MagicEntity {
 

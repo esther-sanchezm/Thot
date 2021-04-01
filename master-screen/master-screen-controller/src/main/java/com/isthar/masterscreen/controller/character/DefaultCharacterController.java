@@ -1,4 +1,4 @@
-package com.isthar.masterscreen.controller;
+package com.isthar.masterscreen.controller.character;
 
 import com.isthar.masterscreen.controller.character.CharacterController;
 import com.isthar.masterscreen.controller.character.resource.CharacterResource;
@@ -11,14 +11,13 @@ import java.util.List;
 @RestController
 public class DefaultCharacterController implements CharacterController {
 
-
     @Override
-    public List<CharacterResource> getAllCharacter() {
+    public List<CharacterResource> findAll() {
         return null;
     }
 
     @Override
-    public CharacterProfileResource getCharacter() {
+    public CharacterProfileResource get() {
         return null;
     }
 }
