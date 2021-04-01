@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "Swagger Character"
+  termsOfService: "http://swagger.io/terms/"
+host: "petstore.swagger.io"
+basePath: "/v2"
+tags:
+  - name: "character"
+    description: "Everything about your Character"
+paths:
+  /character:
+    post:
+      tags:
+        - "Character"
+      summary: "Add new character"
+      description: ""
+      operationId: "addPet"
+      consumes:
+        - "application/json"
+        - "application/xml"
+      produces:
+        - "application/xml"
+        - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "Pet object that needs to be added to the store"
+          required: true
+          schema:
+            $ref: "#/definitions/Character"
+      responses:
+        "405":
+          description: "Invalid input"
+    get:
+      tags:
+        - "Character"
+      summary: "Returns characters"
+      description: "Returns all characters"
+      operationId: "findAllCharacters"
+      produces:
+        - "application/json"
+      parameters: []
+      responses:
+        "200":
+          description: "successful operation"
+definitions:
+  Character:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "int64"
+      name:
+        type: "string"
+        example: "Isthar"
+      description:
+        type: "string"
+        example: "New legal neutral character"
