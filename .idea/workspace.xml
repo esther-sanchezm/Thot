@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d524d1b-d80f-4ac6-86d1-221a296c1725" name="Default Changelist" comment="Move package to backend" />
+    <list default="true" id="9d524d1b-d80f-4ac6-86d1-221a296c1725" name="Default Changelist" comment="Move package to backend">
+      <change beforePath="$PROJECT_DIR$/frontend" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628983832939</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Move package to backend">
+      <created>1628983878131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628983878131</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Move package to backend">
+      <created>1628983981833</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628983981833</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
