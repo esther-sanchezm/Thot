@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/thot.iml" filepath="$PROJECT_DIR$/thot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-screen-boot/thot-boot.iml" filepath="$PROJECT_DIR$/master-screen-boot/thot-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-screen-controller/thot-controller.iml" filepath="$PROJECT_DIR$/master-screen-controller/thot-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/master-screen-repository/thot-repository.iml" filepath="$PROJECT_DIR$/master-screen-repository/thot-repository.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<packaging>pom</packaging>
+
+	<groupId>thot</groupId>
+	<artifactId>master-screen</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>thot</name>
+	<description>Character rol application</description>
+
+	<modules>
+		<module>thot-repository</module>
+		<module>thot-controller</module>
+		<module>thot-boot</module>
+	</modules>
+
+
+</project>

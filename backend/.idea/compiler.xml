@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="thot-repository" />
+        <module name="thot-boot" />
+        <module name="thot-controller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="master-screen-service" target="15" />
+      <module name="thot" target="1.5" />
+      <module name="thot-boot" target="11" />
+      <module name="thot-controller" target="11" />
+      <module name="thot-repository" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="master-screen-service" options="-parameters" />
+      <module name="thot-boot" options="-parameters" />
+      <module name="thot-controller" options="-parameters" />
+      <module name="thot-repository" options="-parameters" />
+    </option>
+  </component>
+</project>
