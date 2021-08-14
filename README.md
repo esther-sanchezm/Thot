@@ -1,12 +1,14 @@
-# Character rol application
-Application is to manage the characters of a role-playing game. 
+# Thot - Character rol application
+Application to create and administrate fantasy conventional lore. Includes:
+- Race
+- History
+- Magic
 
 ## Architecture
 
 ### Backend
 Convenctional three layer:
-- **Repository**: Spring JPA
-- **Service**
+- **Repository**: Spring MongoDB.
 - **Controller**: expose layer of operations. Rest.
 
 ### Frontend
