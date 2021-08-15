@@ -1,96 +1,67 @@
 @echo off
 echo ########################################################
 echo .
-echo .                       Menu
+echo .                    Installation
 echo .
 echo ########################################################
 echo .
- 
- 
- 
-rem ########################################################
- 
-rem #### Subcommands execution
-IF NOT "%1"=="" GOTO subcomandos
- 
-rem ########################################################
- 
- 
-:menu_start
-rem Variables actuales
-rem Aña
-echo .
-echo . -------------------------------------------
-echo .    Menu JDYNAMICS
-echo . -------------------------------------------
-set OPTION=1
-SET CHOICE=
- 
-:menu
-set CHOICES=
-rem only for debbuging
-rem echo CHOICE: %CHOICE%
-rem  OPTION: %OPTION%
- 
-rem ########################################################
-rem Opciones de menú
-rem ########################################################
- 
- 
- 
-set LABEL=compilarLimpio
-set TEXT=Compilar proyecto
-set KEY=0
-if "%CHOICE%"=="" echo . %KEY%. %TEXT%  
-if "%OPTION%"=="%CHOICE%" OPCION ELEGIDA:  %KEY%. %TEXT%  
-if "%OPTION%"=="%CHOICE%" start %CD%\menu.bat %LABEL%
-if "%OPTION%"=="%CHOICE%" goto menu_start
-set CHOICES=%CHOICES%%KEY%
-set /a "OPTION+=1"
- 
- 
-rem ########################################################
- 
-echo .
-choice /C %CHOICES%
-set CHOICE=%errorlevel%
-set OPTION=1
-goto menu
- 
- 
-rem ########################################################
-rem 
-rem Subcomandos externos: se ejecutan en procesos separados
-rem 
-rem ########################################################
- 
-:subcomandos
-echo . -------------------------------------------
-echo .    Menu jdynamics . Subcomando %1
-echo . -------------------------------------------
- 
-rem Ejecución del subcomando
-goto %1
- 
-echo .
-echo ERROR. Subcomando no reconocido %1
-echo . 
-pause
-goto end
- 
-rem ########################################################
-ren Subcomandos
-rem ########################################################
- 
- 
-:compilarLimpio
-call mvn  clean install
-goto end
- 
- 
- 
-rem ########################################################
- 
-:end
-pause
-exit
+
+
+:Main
+  CALL :Menu
+EXIT /B 0
+
+:Menu
+  echo Action to do:
+  echo 1 - Up
+  echo 2 - Down
+  echo E - Exit
+  echo.
+  choice /c:12e
+  SET m=%errorlevel%
+  IF %m% EQU 1 CALL :MenuUp
+  IF %m% EQU 2 CALL :MenuDown
+  IF %m% EQU 4 CALL :Quit
+
+  popd
+EXIT /B 0
+
+:MenuUp
+  echo Service:
+  echo 1 - Database
+  echo 2 - Backend
+  echo 3 - Frontend
+  echo 4 - All
+  echo E - Exit
+  echo.
+  choice /c:12345e
+  SET m=%errorlevel%
+  IF %m% EQU 1 CALL :Database
+  IF %m% EQU 2 CALL :Backend
+  IF %m% EQU 3 CALL :Frontend
+  IF %m% EQU 4 CALL :Quit
+
+  popd
+EXIT /B 0
+
+:MenuDown
+  docker-compose down
+EXIT /B 0
+
+:DatabaseUp
+  docker-compose up -d mongodb
+EXIT /B 0
+
+:Backend
+  cd ..
+  cd backend
+  call mvn clean install -f ../pom.xml
+  cd thot-boot
+  call mvn package -f ../thot-boot/pom.xml jib:dockerBuild
+  call docker build . -t thot-backend
+  docker-compose up -d thot-backend
+EXIT /B 0
+
+:Exit
+  pause
+EXIT /B 0
