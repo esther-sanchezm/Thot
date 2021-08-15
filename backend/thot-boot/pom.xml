@@ -39,6 +39,7 @@
 
     <build>
         <plugins>
+            <!-- Maven boot -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -51,6 +52,24 @@
                     </excludes>
                 </configuration>
             </plugin>
+            <!-- Docker build -->
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <configuration>
+                    <to>
+                        <image>gcr.io/distroless/java:11</image>
+                        <tags>
+                            <tag>${project.parent.version}</tag>
+                            <tag>latest</tag>
+                        </tags>
+                    </to>
+                    <container>
+                        <mainClass>com.isthar.masterscreen.ThotApplication</mainClass>
+                    </container>
+                </configuration>
+            </plugin>
+            <!-- /Docker build -->
         </plugins>
     </build>
 </project>
