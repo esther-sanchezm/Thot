@@ -3,7 +3,7 @@ version: '3.7'
 services:
     mongodb:
         image: mongo:latest
-        container_name: mongodb
+        container_name: thot-mongodb
         restart: always
         environment:
             MONGO_INITDB_ROOT_USERNAME: <admin-user>
@@ -13,3 +13,12 @@ services:
             - 27017:27017
         volumes:
             - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+    backend:
+        image: thot-backend:latest
+        container_name: thot-backend
+        environment:
+            JAVA_TOOL_OPTIONS: -Dexternal.configuration.path=/properties
+        volumes:
+            - ./properties:/properties:ro
+        ports:
+            - 8080:8080
