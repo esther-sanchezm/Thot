@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { PrincipalComponent } from './principal.component';
-import { HeaderComponent } from '../../shared/header/header.component';
+import { PrincipalHeaderComponent } from './principal-header/principal-header.component';
+import { PrincipalListComponent } from './principal-list/principal-list.component';
 
 @NgModule({
   declarations: [
     PrincipalComponent, 
-    HeaderComponent
+    PrincipalHeaderComponent,
+    PrincipalListComponent
   ],
   imports: [
     BrowserModule
