@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./race.component.css']
 })
 export class RaceComponent implements OnInit {
-  title = 'Race';
 
   ngOnInit(){
 

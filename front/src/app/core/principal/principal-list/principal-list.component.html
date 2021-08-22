@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-md-4" *ngFor="let lore of elementsLore">
         <div class="card mb-4 box-shadow" >
-            <a href="#">
-              <img class="card-img-top" data-src="{{lore.imagePath}}" alt="{{lore.name}}" src="{{lore.imagePath}}">
+            <a href="#" (click)="onSelect('race')">
+              <img class="card-img-top" data-src="{{lore.imagePath}}" alt="{{lore.name}}" style="height: 205px; width: 100%; display: block;" src="{{lore.imagePath}}">
             </a>
             <div class="card-body">
               <h4 class="list-group-item-heading">{{lore.name}}</h4>

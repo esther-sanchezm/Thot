@@ -1,0 +1,18 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let race of races">
+          <div class="card mb-4 box-shadow" >
+              <a href="#">
+                <img class="card-img-top" data-src="{{lore.imagePath}}" alt="{{lore.name}}" style="height: 205px; width: 100%; display: block;" src="{{lore.imagePath}}">
+              </a>
+              <div class="card-body">
+                <h4 class="list-group-item-heading">{{race.name}}</h4>
+                <p class="card-text">{{race.description}}</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer></footer>

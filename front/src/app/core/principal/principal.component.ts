@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'principal',
@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-  title : string = 'Thot';
-  description : string = 'Application to create lore of fantasy';
+  @Output() screenSelected = new EventEmitter<string>();
 
   ngOnInit(){
 
+  }
+
+  onSelect(feature : string){
+    this.screenSelected.emit(feature);
   }
 }
