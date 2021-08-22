@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LoreElement } from '../principal.model';
 
 
@@ -8,7 +8,6 @@ import { LoreElement } from '../principal.model';
   styleUrls: ['./principal-list.component.css']
 })
 export class PrincipalListComponent implements OnInit {
-  @Output() screenSelected = new EventEmitter<string>();
   
   elementsLore: LoreElement[] = [
     new LoreElement('Race','Different types of creatures of the lore','https://geekandsundry.com/wp-content/uploads/2016/03/scag_header-970x544.jpg'),
@@ -22,7 +21,5 @@ export class PrincipalListComponent implements OnInit {
 
   }
 
-  onSelect(feature : string){
-    this.screenSelected.emit(feature);
-  }
+
 }

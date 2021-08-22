@@ -8,7 +8,9 @@ import { RaceListComponent } from './race-list/race-list.component';
 
 @NgModule({
   declarations: [
-    RaceComponent
+    RaceComponent,
+    RaceHeaderComponent,
+    RaceListComponent
   ],
   imports: [
     BrowserModule

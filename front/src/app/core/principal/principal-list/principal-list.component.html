@@ -1,10 +1,10 @@
 <div class="album py-5 bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4" *ngFor="let lore of elementsLore">
-        <div class="card mb-4 box-shadow" >
+    <div class="card-deck">
+      <div class="col-md-6" *ngFor="let lore of elementsLore">
+        <div class="card mb-6 box-shadow" >
             <a href="#" (click)="onSelect('race')">
-              <img class="card-img-top" data-src="{{lore.imagePath}}" alt="{{lore.name}}" style="height: 205px; width: 100%; display: block;" src="{{lore.imagePath}}">
+              <img class="card-img-top"  data-src="{{lore.imagePath}}" alt="{{lore.name}}" style="height: 300px; width: 100%; display: block;" src="{{lore.imagePath}}">
             </a>
             <div class="card-body">
               <h4 class="list-group-item-heading">{{lore.name}}</h4>
@@ -15,5 +15,4 @@
     </div>
   </div>
 </div>
-<footer></footer>
 

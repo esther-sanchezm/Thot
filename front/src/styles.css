@@ -29,3 +29,14 @@ h3 {
     margin-bottom: 1.5rem!important;
 }
 
+.navbar-collapse {
+    color: black;
+}
+
+.jumbotron {
+    background-color: whitesmoke;
+}
+
+.navbar-collapse{
+    background-color: black;
+}

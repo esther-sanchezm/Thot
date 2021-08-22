@@ -2,8 +2,7 @@ import { Component, OnInit } from "@angular/core";
 
 @Component({
     selector: 'race-header',
-    templateUrl: './race-header.component.html',
-    styleUrls: ['./race-header.component.css']
+    templateUrl: './race-header.component.html'
   })
   export class RaceHeaderComponent {
     title : string = 'Race';
