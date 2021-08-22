@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/master-screen.iml" filepath="$PROJECT_DIR$/master-screen.iml" />
       <module fileurl="file://$PROJECT_DIR$/thot.iml" filepath="$PROJECT_DIR$/thot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/master-screen-boot/thot-boot.iml" filepath="$PROJECT_DIR$/master-screen-boot/thot-boot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/master-screen-controller/thot-controller.iml" filepath="$PROJECT_DIR$/master-screen-controller/thot-controller.iml" />
-      <module fileurl="file://$PROJECT_DIR$/master-screen-repository/thot-repository.iml" filepath="$PROJECT_DIR$/master-screen-repository/thot-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thot-boot/thot-boot.iml" filepath="$PROJECT_DIR$/thot-boot/thot-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thot-controller/thot-controller.iml" filepath="$PROJECT_DIR$/thot-controller/thot-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thot-repository/thot-repository.iml" filepath="$PROJECT_DIR$/thot-repository/thot-repository.iml" />
     </modules>
   </component>
 </project>

@@ -8,11 +8,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="thot-repository" />
-        <module name="thot-boot" />
         <module name="thot-controller" />
+      </profile>
+      <profile name="Annotation profile for thot" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="thot-boot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="master-screen" target="1.5" />
       <module name="master-screen-service" target="15" />
       <module name="thot" target="1.5" />
       <module name="thot-boot" target="11" />

@@ -1,17 +1,17 @@
-package com.isthar.masterscreen.repository.magic.entity;
+package com.isthar.masterscreen.repository.domain.race.entity;
 
-import lombok.Data;
+import com.isthar.masterscreen.repository.common.ContentDocument;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 
-@Data
-@Document(collection = "Magic")
-public class MagicDocument {
+@Document(collection = "Race")
+public class RaceDocument {
 
     private static final String ID = "id";
     private static final String NAME = "name";
     private static final String DESCRIPTION = "description";
+    private static final String CONTENT = "content";
 
 
     @Field(name = NAME)
@@ -20,4 +20,6 @@ public class MagicDocument {
     @Field(name = DESCRIPTION)
     private String description;
 
+    @Field(name = CONTENT)
+    private ContentDocument content;
 }

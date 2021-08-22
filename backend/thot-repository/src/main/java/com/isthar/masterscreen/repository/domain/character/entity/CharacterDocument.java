@@ -1,4 +1,4 @@
-package com.isthar.masterscreen.repository.character.entity;
+package com.isthar.masterscreen.repository.domain.character.entity;
 
 
 import org.springframework.data.mongodb.core.mapping.Document;

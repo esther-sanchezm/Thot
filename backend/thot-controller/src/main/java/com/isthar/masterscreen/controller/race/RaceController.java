@@ -3,16 +3,21 @@ package com.isthar.masterscreen.controller.race;
 import com.isthar.masterscreen.controller.character.resource.CharacterResource;
 import com.isthar.masterscreen.controller.character.resource.profile.CharacterProfileResource;
 import com.isthar.masterscreen.controller.race.resource.RaceResource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 
 public interface RaceController {
 
     @GetMapping("/race")
-    List<RaceResource> findAll();
+    ResponseEntity<List<RaceResource>> findAll();
 
-    @GetMapping("/race/{name}")
-    RaceResource get();
+    @GetMapping("/race/{id}")
+    ResponseEntity<RaceResource> get(Integer id);
+
+    @PostMapping("")
+    void create(RaceResource raceResource);
 
 }
