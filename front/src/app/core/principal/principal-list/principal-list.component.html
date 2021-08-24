@@ -3,7 +3,7 @@
     <div class="card-deck">
       <div class="col-md-6" *ngFor="let lore of elementsLore">
         <div class="card mb-6 box-shadow" >
-            <a href="#" (click)="onSelect('race')">
+            <a href="/race" routerLink="/race" (click)="onSelect('race')">
               <img class="card-img-top"  data-src="{{lore.imagePath}}" alt="{{lore.name}}" style="height: 300px; width: 100%; display: block;" src="{{lore.imagePath}}">
             </a>
             <div class="card-body">

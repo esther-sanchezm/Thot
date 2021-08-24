@@ -10,7 +10,6 @@ import { RaceModule } from "./race/race.module";
 const principalRoutes : Routes = [
     { path : '', component: PrincipalComponent},
     { path : 'race', component: RaceComponent} 
-  
   ]
 @NgModule({
     declarations: [
