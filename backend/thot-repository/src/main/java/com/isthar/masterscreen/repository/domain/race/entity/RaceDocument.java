@@ -1,10 +1,13 @@
 package com.isthar.masterscreen.repository.domain.race.entity;
 
-import com.isthar.masterscreen.repository.common.ContentDocument;
+import com.isthar.masterscreen.repository.domain.race.entity.content.RaceContentDocument;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-
+@Data
+@NoArgsConstructor
 @Document(collection = "Race")
 public class RaceDocument {
 
@@ -21,5 +24,5 @@ public class RaceDocument {
     private String description;
 
     @Field(name = CONTENT)
-    private ContentDocument content;
+    private RaceContentDocument content;
 }

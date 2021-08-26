@@ -21,7 +21,7 @@ public class DefaultRaceController implements RaceController {
     private RaceMapper raceMapper;
 
     @Override
-    public ResponseEntity<List<RaceResource>> findAll() {
+    public ResponseEntity<List<RaceResource>> findAll(String name) {
         List<RaceResource> raceResource = raceMapper.toListDto(raceRepository.findAll());
         return new ResponseEntity<>(raceResource,HttpStatus.OK);
     }
@@ -36,6 +36,11 @@ public class DefaultRaceController implements RaceController {
 
     @Override
     public void create(RaceResource raceResource) {
+        raceRepository.save(raceMapper.toEntity(raceResource));
+    }
+
+    @Override
+    public void edit(RaceResource raceResource) {
         raceRepository.save(raceMapper.toEntity(raceResource));
     }
 }
