@@ -1,0 +1,17 @@
+.photo-race { 
+    padding: 2px; 
+    border: 2px solid black; 
+    float: right; 
+    width: 300px; 
+}
+
+p { 
+    color: #4c4a37; 
+    font-size: 20px; 
+    line-height: 32px; 
+    margin: 0 0 24px; 
+}
+
+.jumbotron {
+    background: url("https://www.solofondos.com/wp-content/uploads/2016/08/902946.png") center center / cover no-repeat;
+}
