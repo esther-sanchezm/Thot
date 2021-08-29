@@ -4,6 +4,7 @@ import com.isthar.masterscreen.controller.race.mapper.RaceMapper;
 import com.isthar.masterscreen.controller.race.resource.RaceResource;
 import com.isthar.masterscreen.repository.domain.race.RaceRepository;
 import com.isthar.masterscreen.repository.domain.race.entity.RaceDocument;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,12 +14,13 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequiredArgsConstructor
 public class DefaultRaceController implements RaceController {
 
     private static final RaceResource EMPTY = null;
-    private RaceRepository raceRepository;
+    private final RaceRepository raceRepository;
 
-    private RaceMapper raceMapper;
+    private final RaceMapper raceMapper;
 
     @Override
     public ResponseEntity<List<RaceResource>> findAll(String name) {
