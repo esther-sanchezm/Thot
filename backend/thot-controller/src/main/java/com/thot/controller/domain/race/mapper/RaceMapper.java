@@ -1,7 +1,7 @@
 package com.thot.controller.domain.race.mapper;
 
 import com.thot.controller.domain.race.resource.RaceResource;
-import com.isthar.masterscreen.repository.domain.race.entity.RaceDocument;
+import com.thot.repository.domain.race.document.RaceDocument;
 import org.mapstruct.Mapper;
 
 import java.util.List;

@@ -1,9 +1,8 @@
-package com.isthar.masterscreen.repository.domain.race.entity.content;
+package com.thot.repository.domain.race.document.content;
 
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data

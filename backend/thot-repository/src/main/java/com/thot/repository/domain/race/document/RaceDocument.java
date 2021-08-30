@@ -1,6 +1,6 @@
-package com.isthar.masterscreen.repository.domain.race.entity;
+package com.thot.repository.domain.race.document;
 
-import com.isthar.masterscreen.repository.domain.race.entity.content.RaceContentDocument;
+import com.thot.repository.domain.race.document.content.RaceContentDocument;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
