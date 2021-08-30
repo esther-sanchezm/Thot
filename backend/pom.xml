@@ -12,15 +12,15 @@
 	</parent>
 
 	<groupId>thot</groupId>
-	<artifactId>master-screen</artifactId>
+	<artifactId>root</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>thot</name>
+	<name>Thot</name>
 	<description>Character rol application</description>
 
 	<modules>
-		<module>thot-boot</module>
 		<module>thot-repository</module>
 		<module>thot-controller</module>
+		<module>thot-boot</module>
 	</modules>
 
 	<properties>
@@ -35,11 +35,28 @@
 				<version>1.18.10</version>
 				<scope>provided</scope>
 			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
 	<build>
+		<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+				<annotationProcessorPaths>
+					<path>
+						<groupId>org.mapstruct</groupId>
+						<artifactId>mapstruct-processor</artifactId>
+						<version>1.4.2.Final</version>
+					</path>
+				</annotationProcessorPaths>
+			</configuration>
+		</plugin>
+		</plugins>
 	</build>
-
 
 </project>
