@@ -1,12 +1,15 @@
-package com.isthar.masterscreen.repository.domain.character.entity;
+package com.thot.repository.domain.magic.document;
 
-
+import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document(collection = "Character")
-public class CharacterDocument {
 
+@Data
+@Document(collection = "Magic")
+public class MagicDocument {
+
+    private static final String ID = "id";
     private static final String NAME = "name";
     private static final String DESCRIPTION = "description";
 
@@ -16,7 +19,5 @@ public class CharacterDocument {
 
     @Field(name = DESCRIPTION)
     private String description;
-
-    //private RaceEntity race;
 
 }

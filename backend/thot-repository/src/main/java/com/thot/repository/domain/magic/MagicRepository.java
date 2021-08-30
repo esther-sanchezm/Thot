@@ -1,6 +1,6 @@
-package com.isthar.masterscreen.repository.domain.magic;
+package com.thot.repository.domain.magic;
 
-import com.isthar.masterscreen.repository.domain.magic.entity.MagicDocument;
+import com.thot.repository.domain.magic.document.MagicDocument;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

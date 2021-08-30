@@ -2,8 +2,8 @@ package com.thot.controller.domain.race;
 
 import com.thot.controller.domain.race.mapper.RaceMapper;
 import com.thot.controller.domain.race.resource.RaceResource;
-import com.isthar.masterscreen.repository.domain.race.RaceRepository;
-import com.isthar.masterscreen.repository.domain.race.entity.RaceDocument;
+import com.thot.repository.domain.race.RaceRepository;
+import com.thot.repository.domain.race.document.RaceDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
