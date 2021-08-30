@@ -1,6 +1,6 @@
-package com.isthar.masterscreen.controller.magic;
+package com.thot.controller.domain.magic;
 
-import com.isthar.masterscreen.controller.magic.resource.Magic;
+import com.thot.controller.domain.magic.resource.Magic;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 

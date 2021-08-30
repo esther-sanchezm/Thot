@@ -1,4 +1,4 @@
-package com.isthar.masterscreen.controller.character.resource.profile;
+package com.thot.controller.domain.character.resource.profile;
 
 public class CharacterProfileResource {
 

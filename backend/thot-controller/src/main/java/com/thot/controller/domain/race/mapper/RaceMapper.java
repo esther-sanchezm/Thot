@@ -1,6 +1,6 @@
-package com.isthar.masterscreen.controller.race.mapper;
+package com.thot.controller.domain.race.mapper;
 
-import com.isthar.masterscreen.controller.race.resource.RaceResource;
+import com.thot.controller.domain.race.resource.RaceResource;
 import com.isthar.masterscreen.repository.domain.race.entity.RaceDocument;
 import org.mapstruct.Mapper;
 

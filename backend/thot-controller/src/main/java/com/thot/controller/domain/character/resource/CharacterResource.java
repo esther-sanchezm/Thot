@@ -1,4 +1,4 @@
-package com.isthar.masterscreen.controller.character.resource;
+package com.thot.controller.domain.character.resource;
 
 public class CharacterResource {
 

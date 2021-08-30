@@ -48,7 +48,7 @@ EXIT /B 0
   docker-compose down
 EXIT /B 0
 
-:DatabaseUp
+:Database
   docker-compose up -d mongodb
 EXIT /B 0
 

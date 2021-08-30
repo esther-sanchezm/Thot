@@ -1,4 +1,4 @@
-package com.isthar.masterscreen.controller.magic.resource;
+package com.thot.controller.domain.magic.resource;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

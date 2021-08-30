@@ -1,14 +1,12 @@
-package com.isthar.masterscreen.controller.race;
+package com.thot.controller.domain.race;
 
-import com.isthar.masterscreen.controller.race.mapper.RaceMapper;
-import com.isthar.masterscreen.controller.race.resource.RaceResource;
+import com.thot.controller.domain.race.mapper.RaceMapper;
+import com.thot.controller.domain.race.resource.RaceResource;
 import com.isthar.masterscreen.repository.domain.race.RaceRepository;
 import com.isthar.masterscreen.repository.domain.race.entity.RaceDocument;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;

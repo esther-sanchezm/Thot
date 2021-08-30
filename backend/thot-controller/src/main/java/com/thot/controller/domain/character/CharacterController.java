@@ -1,7 +1,7 @@
-package com.isthar.masterscreen.controller.character;
+package com.thot.controller.domain.character;
 
-import com.isthar.masterscreen.controller.character.resource.CharacterResource;
-import com.isthar.masterscreen.controller.character.resource.profile.CharacterProfileResource;
+import com.thot.controller.domain.character.resource.CharacterResource;
+import com.thot.controller.domain.character.resource.profile.CharacterProfileResource;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.List;
