@@ -9,10 +9,10 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @NoArgsConstructor
 public class RaceContentDocument {
 
-    private static final String KEY = "key";
+    private static final String TITLE = "key";
     private static final String DESCRIPTION = "value";
 
-    @Field(name = KEY)
+    @Field(name = TITLE)
     private String title;
 
     @Field(name = DESCRIPTION)

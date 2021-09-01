@@ -25,25 +25,46 @@
 
 	<properties>
 		<com.google.cloud.tools.jib-maven-plugin.version>2.4.0</com.google.cloud.tools.jib-maven-plugin.version>
+		<org.projectlombok.lombok.version>1.18.10</org.projectlombok.lombok.version>
+		<org.mapstruct.mapstruct.version>1.4.2.Final</org.mapstruct.mapstruct.version>
+		<io.springfox.springfox-boot-starter.version>3.0.0</io.springfox.springfox-boot-starter.version>
+		<org.springframework.spring-aop.version>5.3.9</org.springframework.spring-aop.version>
+		<org.apache.logging.log4j.version>2.14.0</org.apache.logging.log4j.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<!-- Lombok -->
 			<dependency>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok</artifactId>
-				<version>1.18.10</version>
+				<version>${org.projectlombok.lombok.version}</version>
 				<scope>provided</scope>
 			</dependency>
+			<!-- Mapstruct -->
 			<dependency>
 				<groupId>org.mapstruct</groupId>
 				<artifactId>mapstruct</artifactId>
-				<version>1.4.2.Final</version>
+				<version>${org.mapstruct.mapstruct.version}</version>
 			</dependency>
+			<!-- Springfox -->
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-boot-starter</artifactId>
-				<version>3.0.0</version>
+				<version>${io.springfox.springfox-boot-starter.version}</version>
+			</dependency>
+			<!-- Spring aop -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-aop</artifactId>
+				<version>${org.springframework.spring-aop.version}</version>
+			</dependency>
+			<!-- Log4j -->
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${org.apache.logging.log4j.version}</version>
+				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -60,7 +81,7 @@
 					<path>
 						<groupId>org.mapstruct</groupId>
 						<artifactId>mapstruct-processor</artifactId>
-						<version>1.4.2.Final</version>
+						<version>{org.mapstruct.mapstruct.version}</version>
 					</path>
 				</annotationProcessorPaths>
 			</configuration>
