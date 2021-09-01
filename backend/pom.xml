@@ -54,6 +54,11 @@
 				<artifactId>springfox-boot-starter</artifactId>
 				<version>${io.springfox.springfox-boot-starter.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>${io.springfox.springfox-boot-starter.version}</version>
+			</dependency>
 			<!-- Spring aop -->
 			<dependency>
 				<groupId>org.springframework</groupId>
