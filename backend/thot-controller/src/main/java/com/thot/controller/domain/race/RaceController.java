@@ -1,6 +1,7 @@
 package com.thot.controller.domain.race;
 
 import com.thot.controller.domain.race.resource.RaceResource;
+import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -25,7 +26,7 @@ public interface RaceController {
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Get race")
     })
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     ResponseEntity<RaceResource> get(Integer id);
 
     @ApiOperation(value = "Create race")
@@ -33,12 +34,12 @@ public interface RaceController {
             @ApiResponse(code = 201, message = "Created race")
     })
     @PostMapping("")
-    void create(RaceResource raceResource);
+    ResponseEntity create(RaceResource raceResource);
 
     @ApiOperation(value = "Get race")
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Obtained race")
     })
     @PutMapping("{id}")
-    void edit(RaceResource raceResource);
+    ResponseEntity edit(RaceResource raceResource);
 }

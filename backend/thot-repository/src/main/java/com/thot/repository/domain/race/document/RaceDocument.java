@@ -3,6 +3,7 @@ package com.thot.repository.domain.race.document;
 import com.thot.repository.domain.race.document.content.RaceContentDocument;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -16,6 +17,8 @@ public class RaceDocument {
     private static final String DESCRIPTION = "description";
     private static final String CONTENT = "content";
 
+    @Id
+    private Integer id; //I have to review the functionality of ids in mongoDB
 
     @Field(name = NAME)
     private String name;
@@ -25,4 +28,8 @@ public class RaceDocument {
 
     @Field(name = CONTENT)
     private RaceContentDocument content;
+
+    public RaceDocument(Integer id){
+        this.id = id;
+    }
 }

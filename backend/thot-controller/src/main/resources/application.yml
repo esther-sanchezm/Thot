@@ -1,4 +1,4 @@
-openApi:
+open-api:
     name: 'thot-backend'
     description: 'Description to management lore of fantasy'
     version: ''

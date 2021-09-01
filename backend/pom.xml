@@ -30,6 +30,7 @@
 		<io.springfox.springfox-boot-starter.version>3.0.0</io.springfox.springfox-boot-starter.version>
 		<org.springframework.spring-aop.version>5.3.9</org.springframework.spring-aop.version>
 		<org.apache.logging.log4j.version>2.14.0</org.apache.logging.log4j.version>
+		<org.mapstruct.mapstruct.version>1.4.2.Final</org.mapstruct.mapstruct.version>
 	</properties>
 
 	<dependencyManagement>
@@ -81,7 +82,7 @@
 					<path>
 						<groupId>org.mapstruct</groupId>
 						<artifactId>mapstruct-processor</artifactId>
-						<version>{org.mapstruct.mapstruct.version}</version>
+						<version>${org.mapstruct.mapstruct.version}</version>
 					</path>
 				</annotationProcessorPaths>
 			</configuration>

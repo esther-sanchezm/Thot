@@ -19,8 +19,8 @@ public class ThotException { //TODO: 01/09/2021 Best name exception
 
         private List<String> errors;
 
-
         public ThotException(ThotError thotError, List<String> errors) {
             this.timestamp = LocalDateTime.now();
+            this.error = thotError;
         }
 }

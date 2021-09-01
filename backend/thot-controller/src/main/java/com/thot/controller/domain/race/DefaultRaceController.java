@@ -2,6 +2,7 @@ package com.thot.controller.domain.race;
 
 import com.thot.controller.domain.race.mapper.RaceMapper;
 import com.thot.controller.domain.race.resource.RaceResource;
+import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import com.thot.repository.domain.race.RaceRepository;
 import com.thot.repository.domain.race.document.RaceDocument;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+//@RequiredArgs
 public class DefaultRaceController implements RaceController {
 
     private static final RaceResource EMPTY = null;
@@ -28,7 +30,7 @@ public class DefaultRaceController implements RaceController {
 
     @Override
     public ResponseEntity<List<RaceResource>> findAll(String name) {
-        List<RaceResource> raceResource = raceMapper.toListDto(raceRepository.findAll());
+        List<RaceResource> raceResource =raceMapper .toListDto(raceRepository.findAll());
         return new ResponseEntity<>(raceResource,HttpStatus.OK);
     }
 
@@ -41,12 +43,13 @@ public class DefaultRaceController implements RaceController {
     }
 
     @Override
-    public void create(RaceResource raceResource) {
+    public ResponseEntity create(RaceResource raceResource) {
         raceRepository.save(raceMapper.toEntity(raceResource));
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 
     @Override
-    public void edit(RaceResource raceResource) {
-        raceRepository.save(raceMapper.toEntity(raceResource));
+    public ResponseEntity edit(RaceResource raceResource) {
+        return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 }
