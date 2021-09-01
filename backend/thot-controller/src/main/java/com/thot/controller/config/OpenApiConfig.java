@@ -27,7 +27,7 @@ public class OpenApiConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.thot.controller"))
+                //.apis(RequestHandlerSelectors.basePackage("com.thot.controller.*.domain.*"))
                 .paths(PathSelectors.any())
                 .build();
     }
