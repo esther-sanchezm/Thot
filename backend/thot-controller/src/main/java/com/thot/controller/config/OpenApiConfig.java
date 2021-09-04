@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 @ComponentScan("com.thot.controller")
-@ConfigurationProperties(prefix = "open-api")
+@ConfigurationProperties(prefix = "open-api") //TODO: 04/09/2021 Something is not good with that
 public class OpenApiConfig {
 
     private String name;
