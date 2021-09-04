@@ -1,2 +1,6 @@
 server:
   port: 8087
+open-api:
+  name: 'thot-backend'
+  description: 'Description to management lore of fantasy'
+  version: ''

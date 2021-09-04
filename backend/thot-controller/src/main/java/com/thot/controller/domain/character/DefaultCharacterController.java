@@ -5,11 +5,13 @@ import com.thot.controller.domain.character.resource.CharacterResource;
 import com.thot.controller.domain.character.resource.profile.CharacterProfileResource;
 import com.thot.repository.domain.character.CharacterRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@Validated
 @RequiredArgsConstructor
 public class DefaultCharacterController implements CharacterController {
 

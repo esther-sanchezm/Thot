@@ -19,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ComponentScan("com.thot.controller")
 @ConfigurationProperties(prefix = "open-api")
 public class OpenApiConfig {
-    
+
     private String name;
 
     private String description;
@@ -28,7 +28,7 @@ public class OpenApiConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.thot.controller.domain.*."))
+                .apis(RequestHandlerSelectors.basePackage("com.thot.controller.domain"))
                 .paths(PathSelectors.any())
                 .build()
                 .apiInfo(apiInfo());
