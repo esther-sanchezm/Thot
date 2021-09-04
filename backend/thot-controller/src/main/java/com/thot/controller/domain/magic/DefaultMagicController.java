@@ -1,28 +1,29 @@
 package com.thot.controller.domain.magic;
 
-import com.thot.controller.domain.magic.resource.Magic;
+import com.thot.controller.domain.magic.mapper.MagicMapper;
+import com.thot.controller.domain.magic.resource.MagicResource;
+import com.thot.repository.domain.magic.MagicRepository;
+import com.thot.repository.domain.magic.document.MagicDocument;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequiredArgsConstructor
 public class DefaultMagicController implements MagicController {
 
+    private MagicRepository magicRepository;
+
+    private MagicMapper magicMapper;
 
     @Override
-    public ResponseEntity<List<Magic>> findAll() {
-   /*     List<MagicDto> listDto = magicService.findAll();
-        List<Magic> listMagicResource = new ArrayList<>();
-       listDto.forEach((final MagicDto magicDto) ->
-                listMagicResource.add(Magic.builder()
-                        .name(magicDto.getName())
-                        .description(magicDto.getDescription()).build()));
+    public ResponseEntity<List<MagicResource>> findAll() {
+        List<MagicDocument> listDocument = magicRepository.findAll();
+        List<MagicResource> listMagicResource = magicMapper.toListResource(listDocument);
         return new ResponseEntity<>(listMagicResource,(listMagicResource.isEmpty() ? HttpStatus.OK : HttpStatus.NO_CONTENT));
-    */
-        return null;
     }
 
 }

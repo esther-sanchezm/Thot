@@ -28,8 +28,4 @@ public class RaceDocument {
 
     @Field(name = CONTENT)
     private RaceContentDocument content;
-
-    public RaceDocument(Integer id){
-        this.id = id;
-    }
 }

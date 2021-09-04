@@ -81,8 +81,8 @@ class DefaultRaceControllerTest {
     }
 
     private RaceDocument createRaceDocument(Integer mockId) {
-        RaceDocument raceDocument = new RaceDocument(mockId);
-        //raceDocument.setId(mockId);
+        RaceDocument raceDocument = new RaceDocument();
+        raceDocument.setId(mockId);
         return raceDocument;
     }
 
