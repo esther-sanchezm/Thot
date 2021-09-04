@@ -15,9 +15,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DefaultMagicController implements MagicController {
 
-    private MagicRepository magicRepository;
+    private final MagicRepository magicRepository;
 
-    private MagicMapper magicMapper;
+    private final MagicMapper magicMapper;
 
     @Override
     public ResponseEntity<List<MagicResource>> findAll() {

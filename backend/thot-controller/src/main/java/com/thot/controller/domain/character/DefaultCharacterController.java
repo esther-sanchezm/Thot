@@ -13,9 +13,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DefaultCharacterController implements CharacterController {
 
-    private CharacterRepository characterRepository;
+    private final CharacterRepository characterRepository;
 
-    private CharacterMapper characterMapper;
+    private final CharacterMapper characterMapper;
 
     @Override
     public List<CharacterResource> findAll() {

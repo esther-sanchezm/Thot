@@ -5,6 +5,7 @@ import com.thot.controller.domain.race.resource.RaceResource;
 import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import com.thot.repository.domain.race.RaceRepository;
 import com.thot.repository.domain.race.document.RaceDocument;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-//@RequiredArgs
+@RequiredArgsConstructor
 public class DefaultRaceController implements RaceController {
 
     private static final RaceResource EMPTY = null;
@@ -22,11 +23,6 @@ public class DefaultRaceController implements RaceController {
 
     private final RaceMapper raceMapper;
 
-    @Autowired
-    public DefaultRaceController(final RaceMapper raceMapper, final RaceRepository raceRepository){
-        this.raceRepository = raceRepository;
-        this.raceMapper = raceMapper;
-    }
 
     @Override
     public ResponseEntity<List<RaceResource>> findAll(String name) {

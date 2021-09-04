@@ -46,7 +46,7 @@ class DefaultRaceControllerTest {
     @Spy
     private final RaceMapper raceMapper = new RaceMapperImpl();
 
-    private RaceController raceController = new DefaultRaceController(raceMapper, raceRepository);
+    private RaceController raceController = new DefaultRaceController(raceRepository, raceMapper);
 
     @Test
     void get_OK() throws Exception {
