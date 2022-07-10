@@ -7,8 +7,6 @@ import com.thot.controller.domain.race.DefaultRaceController;
 import com.thot.controller.domain.race.RaceController;
 import com.thot.controller.domain.race.mapper.RaceMapper;
 import com.thot.controller.domain.race.mapper.RaceMapperImpl;
-import com.thot.controller.domain.race.resource.RaceResource;
-import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import com.thot.repository.domain.race.RaceRepository;
 import com.thot.repository.domain.race.document.RaceDocument;
 import org.junit.jupiter.api.Test;

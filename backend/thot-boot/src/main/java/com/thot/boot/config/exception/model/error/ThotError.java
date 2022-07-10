@@ -1,6 +1,5 @@
 package com.thot.boot.config.exception.model.error;
 
-import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 
 public enum ThotError {

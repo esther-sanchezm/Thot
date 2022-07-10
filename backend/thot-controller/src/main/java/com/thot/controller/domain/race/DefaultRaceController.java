@@ -2,11 +2,9 @@ package com.thot.controller.domain.race;
 
 import com.thot.controller.domain.race.mapper.RaceMapper;
 import com.thot.controller.domain.race.resource.RaceResource;
-import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import com.thot.repository.domain.race.RaceRepository;
 import com.thot.repository.domain.race.document.RaceDocument;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -43,6 +41,7 @@ public class DefaultRaceController implements RaceController {
     @Override
     public ResponseEntity create(RaceResource raceResource) {
         raceRepository.save(raceMapper.toEntity(raceResource));
+        throw new CustomerException("");
         return new ResponseEntity<>(HttpStatus.NOT_IMPLEMENTED);
     }
 

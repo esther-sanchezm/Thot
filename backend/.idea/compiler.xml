@@ -3,32 +3,28 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="thot-repository" />
-        <module name="thot-controller" />
-      </profile>
-      <profile name="Annotation profile for thot" enabled="true">
+      <profile name="Annotation profile for Thot" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar" />
         </processorPath>
         <module name="thot-boot" />
+        <module name="thot-repository" />
+        <module name="thot-controller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="master-screen" target="1.5" />
       <module name="master-screen-service" target="15" />
+      <module name="root" target="1.8" />
       <module name="thot" target="1.5" />
-      <module name="thot-boot" target="11" />
-      <module name="thot-controller" target="11" />
-      <module name="thot-repository" target="11" />
+      <module name="thot-boot" target="1.8" />
+      <module name="thot-controller" target="1.8" />
+      <module name="thot-repository" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

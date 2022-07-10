@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/master-screen.iml" filepath="$PROJECT_DIR$/master-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/root.iml" filepath="$PROJECT_DIR$/root.iml" />
       <module fileurl="file://$PROJECT_DIR$/thot.iml" filepath="$PROJECT_DIR$/thot.iml" />
       <module fileurl="file://$PROJECT_DIR$/thot-boot/thot-boot.iml" filepath="$PROJECT_DIR$/thot-boot/thot-boot.iml" />
       <module fileurl="file://$PROJECT_DIR$/thot-controller/thot-controller.iml" filepath="$PROJECT_DIR$/thot-controller/thot-controller.iml" />

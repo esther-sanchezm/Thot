@@ -1,7 +1,6 @@
 package com.thot.controller.domain.race;
 
 import com.thot.controller.domain.race.resource.RaceResource;
-import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

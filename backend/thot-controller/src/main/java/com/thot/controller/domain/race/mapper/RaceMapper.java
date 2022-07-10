@@ -1,7 +1,6 @@
 package com.thot.controller.domain.race.mapper;
 
 import com.thot.controller.domain.race.resource.RaceResource;
-import com.thot.controller.domain.race.resource.simple.RaceSimpleResource;
 import com.thot.repository.domain.race.document.RaceDocument;
 import org.mapstruct.Mapper;
 
